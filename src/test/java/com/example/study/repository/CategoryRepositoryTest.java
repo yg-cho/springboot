@@ -40,7 +40,7 @@ public class CategoryRepositoryTest extends StudyApplicationTests {
     @Test
     public void read() {
         String type = "COMPUTER";
-        Optional<Category> optionalCategory = categoryRepository.findByType(type);
+        Optional<Category> optionalCategory = categoryRepository.findById(1L);
 
         // select * from category where type = 'COMPUTER'
 
